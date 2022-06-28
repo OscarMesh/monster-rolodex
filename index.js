@@ -85,6 +85,7 @@ const searchBox = document.getElementById("search");
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     const cardListContainer = document.getElementById("card-list");
     const mappedList = document.createDocumentFragment();
 
